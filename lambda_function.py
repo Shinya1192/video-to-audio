@@ -6,9 +6,6 @@ from tempfile import TemporaryDirectory
 from io import BytesIO
 from urllib.parse import unquote_plus
 
-print("Contents of /opt/bin directory:")
-print(os.listdir('/opt/bin'))
-
 
 def lambda_handler(event, context):
     print("Received event:", json.dumps(event, indent=2))
